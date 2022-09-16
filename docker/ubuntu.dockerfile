@@ -56,6 +56,14 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.c
     apt-key --keyring /usr/share/keyrings/cloud.google.gpg  add - && \
     apt-get update -y && apt-get install google-cloud-cli -y
 
-# dotnet and nodejs?
+# install GitHub CLI
+RUN apt-get install -y gh
+
+# dotnet
+
+sudo apt-get update && \
+  sudo apt-get install -y dotnet6
+
+# nodejs???
 
 CMD [ "/bin/bash" ]
