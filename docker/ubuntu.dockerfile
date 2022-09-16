@@ -66,7 +66,7 @@ RUN wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-p
     rm packages-microsoft-prod.deb
 
 RUN apt-get update && \
-    apt-get install -y dotnet6
+    apt-get install -y dotnet-sdk-6.0
 
 # nodejs???
 
