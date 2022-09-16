@@ -61,8 +61,8 @@ RUN apt-get install -y gh
 
 # dotnet
 
-sudo apt-get update && \
-  sudo apt-get install -y dotnet6
+RUN apt-get update && \
+    apt-get install -y dotnet6
 
 # nodejs???
 
