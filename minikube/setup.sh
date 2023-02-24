@@ -38,7 +38,7 @@ echo "Checking if docker is installed"
 which -s docker &> /dev/null
 if [[ $? != 0 ]]; then
     echo "Please install docker on your system before proceeding with this script"
-    exit 1
+    #exit 1
 else
     echo "Docker is already installed"
 fi
