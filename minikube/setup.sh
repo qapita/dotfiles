@@ -17,7 +17,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Checking if brew (https://brew.sh/) is installed"
     which -s brew
-    if [[ $? ! = 0 ]]; then
+    if [[ $? != 0 ]]; then
         echo "brew not found. Installing..."
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     else
