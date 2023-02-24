@@ -248,7 +248,7 @@ minikube addons enable registry-creds
 
 # Configure Registry-Creds
 echo "Configuring Registry-Creds..."
-
+minikube addons configure registry-creds
 
 # Minikube Dashboard
 echo "Enable minikube dashboard"
