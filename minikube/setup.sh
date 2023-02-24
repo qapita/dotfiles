@@ -35,13 +35,13 @@ fi
 
 echo "Checking if docker is installed"
 
-which -s docker &> /dev/null
-if [[ $? != 0 ]]; then
-    echo "Please install docker on your system before proceeding with this script"
-    #exit 1
-else
-    echo "Docker is already installed"
-fi
+# which -s docker &> /dev/null
+# if [[ $? != 0 ]]; then
+#     echo "Please install docker on your system before proceeding with this script"
+#     #exit 1
+# else
+#     echo "Docker is already installed"
+# fi
 
 # Get current docker version
 current_version=$(docker --version | cut -d' ' -f3 | cut -d',' -f1)
